@@ -1,0 +1,16 @@
+{
+  "name": "mongoose-demo",
+  "version": "1.0.0",
+  "main": "model.js",
+  "dependencies": {
+    "mongoose": "^4.7.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

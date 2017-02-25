@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>fullPageDemo</title>
+</head>
+
+<style>
+	body{
+		color:#fff;
+		background:#ccc;
+	}
+
+	.box {
+ margin-left: 10000px;
+ width: 100px;
+ height: 100px;
+ background: #7C9DD4;
+ box-shadow: 5px 5px 0px #D1D1D1;
+}
+#playButton {
+ display: block;
+ font-size: 20px;
+ margin: 20px 10px;
+ font-weight: bold;
+ color: #222;
+ text-decoration: none;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.css">
+
+
+<body>
+    <div id="fullpage">
+		<div class="section section1"><span>section1</span></div>
+		<div class="section section2"> <a href="#" rel="external nofollow" rel="external nofollow" id="playButton">Play</a>
+ <div class="box"></div></div>
+		<div class="section section3">section3</div>
+		<div class="section section4">section4</div>
+		<div class="section section5">
+			<div class="slide"> Slide 1 </div>
+			<div class="slide"> Slide 2 </div>
+			<div class="slide"> Slide 3 </div>
+			<div class="slide"> Slide 4 </div>
+		</div>
+	<div>
+	
+</body>
+
+</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="move.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { 
+    $('#fullpage').fullpage({
+		anchors:['page1','page2','page3','page4'],
+		navigation:true,
+		navigationPosition:'right',
+		navigationTooltips:['page1','page2','page3','page4'],
+		afterLoad: function(anchorLink,index){
+			switch (index){
+				case 2:move('.box').set('margin-left','10px').end(function(){  //通过回调实现多种效果
+						move('.box').scale(2).end();
+				});
+				break;
+				default: break;
+			}
+		
+		},
+		onLeave:function(link,index){
+			switch (index){
+				case 2:move('.box').set('margin-left','10000px').scale(1).end();  //还原属性
+				break;
+				default: break;
+			}
+		}
+	});
+	});
+	
+</script>

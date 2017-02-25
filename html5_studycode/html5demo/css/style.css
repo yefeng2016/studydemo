@@ -1,0 +1,182 @@
+/*重置样式*/
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Microsoft YaHei UI;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 48px;
+  color: #f46208;
+}
+/*header部分*/
+header{
+  background: #2e2e2e;
+}
+header > .top{
+  height: 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+header > .top > a{
+  float: left;
+  margin-top: 35px;
+}
+header > .top > nav{
+  float: right;
+  line-height: 100px;
+}
+header > .top > nav > ul > li{
+  float: left;
+  margin-left: 30px;
+}
+header > .top > nav > ul > li > a {
+  color: #fff;
+}
+header > .top > nav > ul > li > a:hover{
+  background: #FF0000;
+  color: yellow;
+}
+
+/*banner部分*/
+.banner{
+  position: relative;
+}
+.banner > img{
+  width: 100%;
+  z-index: -1;
+}
+.banner > .banner-text{
+  position: absolute;
+  z-index: 1;
+  top:40%;
+  left: 25%;
+}
+.banner > .banner-text > h2{
+  color: #fff;
+  font-size:72px; 
+}
+.banner > .banner-text > p{
+  color: #fff;
+  font-size: 32px;
+}
+/*所有section内content的默认样式*/
+section .content{
+  margin: 0 auto;
+  text-align: center;
+  margin-top:68px;
+}
+section .content > p{
+  margin: 30px auto;
+  font-weight: bold;
+}
+/*portfolio部分样式*/
+section > .portfolio{
+  height: 250px;
+   width: 680px;
+}
+section > .portfolio  > ul{
+  margin-top:50px;
+}
+section > .portfolio > ul > li{
+  display: inline-block;
+  border: 1px solid #f46208;
+  margin-left: 8px; 
+}
+section > .portfolio >  ul > li > a{
+  padding: 5px;
+  text-align: center;
+  display: block;
+  color: #f46208;
+}
+section > .portfolio >  ul > li > a:hover{ 
+  color: #fff;
+  background: #f46208;
+}
+section > .portfolio-img {
+  width: 100%;
+  height: 560px;
+}
+
+/*stats部分样式*/
+section > .stats {
+  height: 350px;
+   width: 680px;
+}
+section > .stats > .stats-image-text > dl{
+  width: 80px;
+  height:100%;
+  display: inline-block;
+  margin: 20px 40px;
+}
+section > .stats > .stats-image-text > dl > dd:first-of-type{
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 38px;
+}
+section > .stats > .stats-image-text > dl > dd:last-of-type{
+  text-align: center;
+  font-size: 25px;
+  color: #f46208;
+  letter-spacing: 5px;
+}
+
+/*Team部分*/
+section > .team{
+  width: 100%;
+  height: 560px;
+  background: #2e2e2e;
+}
+section > .team > h2{
+  padding-top:68px; 
+}
+section > .team > p{
+  width: 680px;
+  color: #fff;
+}
+section > .team > .team-image-text > dl{
+  display: inline-block;
+  margin: 0 20px;
+}
+section > .team > .team-image-text > dl > dd{
+  color: #fff;
+  text-align: center;
+  width: 210px;
+}
+/*contact-us*/
+section > .contact-us{
+  width: 680px;
+}
+section > .form{
+  margin: 0 auto;
+  width: 880px;
+  text-align: center;
+}
+section > .form  input{
+  height: 38px;
+  width: 432px;
+  margin: 20px 0;
+}
+section > .form >input:last-of-type{
+  width: 120px;
+  background: #f46208;
+  border: 0px;
+  color: #fff;
+}
+/*footer*/
+footer{
+  margin-top: 60px;
+  width:100%;
+  height:80px;
+  background:#2e2e2e;
+  text-align: center;
+  color: #fff;
+  line-height:80px; 
+}
